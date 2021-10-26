@@ -1,0 +1,8 @@
+[Unit]
+Description="Invoke script to backup all home dirs to usb drive"
+
+[Service]
+ExecStart=/usr/local/bin/sdbackup.sh
+
+[Install]
+WantedBy=multi-user.target

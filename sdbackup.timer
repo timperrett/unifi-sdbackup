@@ -1,0 +1,11 @@
+[Unit]
+Description="Daily invokation of sdbackup.service"
+
+[Timer]
+OnCalendar=daily
+AccuracySec=2m
+Persistent=true
+Unit=sdbackup.service
+
+[Install]
+WantedBy=timers.target
