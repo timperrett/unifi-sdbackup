@@ -13,6 +13,6 @@ FWIW, the new cloud backup for Unifi OS is miles better than the status quo, but
 1. Copy over `sdbackup.sh` to `/usr/local/bin/sdbackup.sh`
 1. Copy over `sdbackup.service` to `/etc/systemd/system`
 1. Copy over `sdbackup.timer` to `/etc/systemd/system`
-1. Enable the units: `systemctl enable sdbackup.service && systemctl enable sdbackup.timer`
+1. Enable the units: `systemctl enable sdbackup.service && systemctl enable --now sdbackup.timer`
 1. Profit!
 
