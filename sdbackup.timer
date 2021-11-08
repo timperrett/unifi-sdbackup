@@ -2,8 +2,8 @@
 Description="Daily invokation of sdbackup.service"
 
 [Timer]
-OnCalendar=daily
 AccuracySec=2m
+OnCalendar=*-*-* 08:00:00
 Persistent=true
 Unit=sdbackup.service
 
